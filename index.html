@@ -16,8 +16,11 @@
             <div class="container">
                 <h1>Add To-do</h1>
                 <div class="bg">
-                    <input type="text" class="input-todo" placeholder="Write your to-do here">
-                    <button class="btn-add" onclick="addTodo()">Add</button>
+                    <div>
+                        <input type="text" class="input-todo" maxlength="100" placeholder="Write your to-do here">
+                        <button class="btn-add" onclick="addTodo()">Add</button>
+                    </div>
+                    <button class="btn-del-all" onclick="delAll()">Excluir tudo</button>
                 </div>
             </div>
         </div>

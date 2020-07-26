@@ -4,14 +4,26 @@
     box-sizing: border-box;
 }
 
+button {
+    border: 1px solid #c0c0c0;
+    border-radius: 2px;
+    color: #666666;
+
+}
+
 li {
     list-style: none;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #c0c0c0;
 }
 
 h1 {
     text-align: center;
     font-size: 25px;
-    color: rgb(87, 87, 87);
+    color: #575757;
     height: 30px;
     margin-bottom: 10px;
 }
@@ -24,14 +36,14 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(hsl(6, 100%, 80%),hsl(335, 100%, 65%));
+    background: linear-gradient(#ffa399,#ff4d97);
     width: 100vw;
     height: 100vh;
 }
 
 .add, .list {
     height: 500px;
-    background-color: rgba(255, 255, 255, 0.575);
+    background-color: rgba(255, 255, 255, 0.576);
     border-radius: 10px;
 }
 
@@ -39,6 +51,10 @@ h1 {
     width: 300px;
     margin-right: 20px;
 
+}
+
+.btn-excl-all {
+    bottom: 0;
 }
 
 .list {
@@ -54,11 +70,18 @@ h1 {
     padding: 15px;
 }
 
+.add .bg {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .input-todo {
     width: 100%;
     height: 30px;
     text-align: center;
     margin-bottom: 5px;
+    border: 1px solid #c0c0c0;
 }
 
 .btn-add {
@@ -66,3 +89,18 @@ h1 {
     width: 100%;
 }
 
+.btn-del {
+    height: 25px;
+    width: 60px;
+}
+
+.btn-del-all {
+    height: 30px;
+    width: 100%;
+}
+
+.item {
+    width: 350px;
+    height: 50px;
+    word-wrap: break-word;
+}
