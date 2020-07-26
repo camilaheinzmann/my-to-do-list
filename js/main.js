@@ -34,7 +34,6 @@ function allTodos() {
     }
 }
 
-
 function addTodo() {
     todos.push(inputElement.value);
     inputElement.value = "";
