@@ -44,7 +44,7 @@ h1 {
     display: flex;
     justify-content: center;
     padding-top: 50px; 
-    background: linear-gradient(#ffa399, #ff4d97);
+    background: linear-gradient(#af99ff, #bbbbbb, #fa98c1);
     width: 100%;
     height: 100%;
 }
