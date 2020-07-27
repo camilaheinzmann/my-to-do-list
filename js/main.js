@@ -1,8 +1,9 @@
 var inputElement = document.querySelector('.input-todo');
+var dateElement = document.querySelector('.date-todo');
 var btnElement = document.querySelector('.btn-add');
 var ulElement = document.querySelector('.list ul');
 
-var todos = [];
+var todos = JSON.parse(localStorage.getItem('todos_list')) || [];
 
 function allTodos() {
     // limpa lista para não renderizar tudo novamente
@@ -39,6 +40,8 @@ function addTodo() {
         todos.push(inputElement.value);
         inputElement.value = "";
         allTodos();
+
+        saveStorage();
     } else {
         alert('Write a to-do!');
     }
@@ -47,11 +50,18 @@ function addTodo() {
 function delTodo(pos) {
     todos.splice(pos, 1);
     allTodos();
+    saveStorage();
 }
 
 function delAll() {
     todos = [];
     allTodos();
+    saveStorage();
+}
+
+// função para armazenar os dados no storage
+function saveStorage() {
+    localStorage.setItem('todos_list', JSON.stringify(todos));
 }
 
 allTodos();
