@@ -20,7 +20,7 @@ function allTodos() {
 
         //add botao excluir
         var btnDel = document.createElement('button');
-        var textDel = document.createTextNode('Excluir');
+        var textDel = document.createTextNode('Delete');
 
         btnDel.setAttribute('class', 'btn-del')
         // adiciona método onclick para excluir todo na posição definida
@@ -35,9 +35,13 @@ function allTodos() {
 }
 
 function addTodo() {
-    todos.push(inputElement.value);
-    inputElement.value = "";
-    allTodos();
+    if (inputElement.value !== '') {
+        todos.push(inputElement.value);
+        inputElement.value = "";
+        allTodos();
+    } else {
+        alert('Write a to-do!');
+    }
 }
 
 function delTodo(pos) {
