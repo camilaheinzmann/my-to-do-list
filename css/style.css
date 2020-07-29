@@ -85,13 +85,26 @@ h1 {
     overflow: auto;
 }
 
-.input-todo {
-    width: 100%;
+.add input {
     height: 30px;
     text-align: center;
     margin-bottom: 5px;
     border: 1px solid #c0c0c0;
     font-size: 14px;
+}
+
+.input-todo {
+    width: 100%;
+}
+
+.date-todo {
+    width: 60%;
+    color: #808080;
+}
+
+.time-todo {
+    width: 38%;
+    color: #808080;
 }
 
 .btn-add,
@@ -100,13 +113,19 @@ h1 {
     width: 100%;
 }
 
-.btn-del {
+.btn-del-list {
     height: 30px;
     width: 60px;
 }
 
-.item {
+.item-list {
     width: 350px;
-    height: 50px;
+    overflow-y: auto;
+    margin-bottom: 5px;
     word-wrap: break-word;
+}
+
+.date-todo-list{
+    font-size: 13px;
+    color: #808080;
 }
