@@ -19,7 +19,7 @@ function allTodos() {
         //cria to-do
         var listItem = document.createElement('li');
         var dataItem = document.createElement('div');
-        dataItem.setAttribute('class', 'dados-item');
+        dataItem.setAttribute('class', 'data-item');
 
         var item = document.createElement('p');
         item.setAttribute('class', 'item-list');
@@ -53,7 +53,7 @@ function addTodo() {
     if (inputElement.value !== '') {
         var input = {}
         input.name = inputElement.value;
-        input.date = moment(dateElement.value).format('DD/MM/YYYY')
+        input.date = moment(dateElement.value).format('DD/MM/YYYY');
         input.time = timeElement.value;
         todos.push(input);
         inputElement.value = "";

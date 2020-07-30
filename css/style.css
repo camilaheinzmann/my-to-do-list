@@ -5,9 +5,16 @@
     font-family: 'Roboto', sans-serif;
 }
 
-body, html {
+html {
     height: 100%;
     width: 100%;
+}
+
+body {
+    background-image: linear-gradient(#af99ff, #bbbbbb, #fa98c1);
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
 }
 
 button {
@@ -36,17 +43,14 @@ h1 {
     font-family: 'Comfortaa', cursive;
 }
 
-.container {
-    margin: 20px;
-}
-
 .content {
     display: flex;
     justify-content: center;
-    padding-top: 50px; 
-    background: linear-gradient(#af99ff, #bbbbbb, #fa98c1);
-    width: 100%;
-    height: 100%;
+    padding: 50px 0; 
+}
+
+.container {
+    margin: 20px;
 }
 
 .bg {
@@ -93,6 +97,11 @@ h1 {
     font-size: 14px;
 }
 
+.date-time{
+    display: flex;
+    justify-content: space-between;
+}
+
 .input-todo {
     width: 100%;
 }
@@ -103,7 +112,7 @@ h1 {
 }
 
 .time-todo {
-    width: 38%;
+    width: 39%;
     color: #808080;
 }
 
@@ -120,7 +129,6 @@ h1 {
 
 .item-list {
     width: 350px;
-    overflow-y: auto;
     margin-bottom: 5px;
     word-wrap: break-word;
 }
@@ -128,4 +136,40 @@ h1 {
 .date-todo-list{
     font-size: 13px;
     color: #808080;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 860px){
+    .content{
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        padding: 20px 0;
+    }
+
+    .add {
+        width: 90vw;
+        height: 300px;
+        margin: 0;
+    }
+
+    .add .bg {
+        height: 220px;
+    }
+
+    .list {
+        width: 90vw;
+        margin: 20px 0 0;
+    }
+
+    .item-list {
+        width: 65vw;
+        overflow-x: auto;
+    }
+}
+
+@media (max-width: 500px){
+    .item-list {
+        width: 50vw;
+    }
 }

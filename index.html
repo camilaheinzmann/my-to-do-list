@@ -20,9 +20,11 @@
                 <h1>Add To-do</h1>
                 <div class="bg">
                     <div>
-                        <input type="text" class="input-todo" maxlength="100" placeholder="Write your to-do here">
-                        <input type="date" class="date-todo">
-                        <input type="time" class="time-todo">
+                        <input type="text" class="input-todo" maxlength="96" placeholder="Write your to-do here">
+                        <div class="date-time">
+                            <input type="date" class="date-todo">
+                            <input type="time" class="time-todo">
+                        </div>
                         <button class="btn-add" onclick="addTodo()">Add</button>
                     </div>
                     <button class="btn-del-all" onclick="delAll()">Delete all</button>
@@ -39,9 +41,7 @@
             </div>
         </div>
     </div>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment-with-locales.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 
