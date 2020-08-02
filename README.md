@@ -7,7 +7,7 @@ App para criação e gerenciamento de tarefas | HTML | CSS | Javascript
 
 Aplicação para criação, consulta e gerenciamento de tarefas.
 
-- Estrutura básica em HTML;
+- Estrutura básica em HTML (base aprendida no [curso de JS da Rocketseat](https://rocketseat.com.br/starter/curso-gratuito-javascript "Curso de Javascript da Rocketseat"));
 - Estilização em CSS;
 - Interações com Javascript;
 - Moment.js para tratamento de datas;
