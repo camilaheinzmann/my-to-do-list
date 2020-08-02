@@ -32,7 +32,7 @@ function allTodos() {
 
         //add botao excluir
         var btnDel = document.createElement('button');
-        btnDel.setAttribute('class', 'btn-del-list')
+        btnDel.setAttribute('class', 'btn-del-list');
         var textDel = document.createTextNode('Delete');
 
         // adiciona método onclick para excluir todo na posição definida
@@ -51,7 +51,7 @@ function allTodos() {
 
 function addTodo() {
     if (inputElement.value !== '') {
-        var input = {}
+        var input = {};
         input.name = inputElement.value;
         input.date = moment(dateElement.value).format('DD/MM/YYYY');
         input.time = timeElement.value;
