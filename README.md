@@ -1,17 +1,20 @@
-# my-to-do-list
-App para criação e gerenciamento de tarefas | HTML | CSS | Javascript
-
-------------
-
-## My To-do List 
-
+# My To-do List 
 Aplicação para criação, consulta e gerenciamento de tarefas.
 
-- Estrutura básica em HTML (base aprendida no [curso de JS da Rocketseat](https://rocketseat.com.br/starter/curso-gratuito-javascript "Curso de Javascript da Rocketseat"));
+<!--ts-->
+   * [Sobre](#sobre)
+   * [Layout Desktop](#layout-desktop)
+   * [Layout Mobile](#layout-mobile)
+   * [Tecnologias](#tecnologias)
+<!--te-->
+
+## Sobre
+- Estrutura básica em HTML 
 - Estilização em CSS;
 - Interações com Javascript;
 - Moment.js para tratamento de datas;
 - Responsividade com Media Queries.
+- Baseado na aplicação aprendida no [curso de JS da Rocketseat](https://rocketseat.com.br/starter/curso-gratuito-javascript "Curso de Javascript da Rocketseat"));
 
 Atualmente utiliza Local Storage para armazenamento de tarefas, sendo que, posteriormente, será implementado o armazenamento em Banco de dados. 
 
@@ -27,4 +30,12 @@ Atualmente utiliza Local Storage para armazenamento de tarefas, sendo que, poste
 
 ------------
 
-###### *Projeto desenvolvido com a exclusiva finalidade de aplicar os conhecimentos obtidos através dos meus estudos em HTML, CSS e JS inicialmente.*
+## Tecnologias 
+- HTML
+- CSS
+- Javascript
+- [Moment.js](https://momentjs.com/ "Moment.js")
+
+<h5 align="center"> Projeto em construção</h5>
+
+###### *Desenvolvido com a exclusiva finalidade de aplicar os conhecimentos obtidos através dos meus estudos em HTML, CSS e JS.*
