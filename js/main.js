@@ -51,17 +51,21 @@ function allTodos() {
 
 function addTodo() {
     if (inputElement.value !== '') {
-        var input = {};
-        input.name = inputElement.value;
-        input.date = moment(dateElement.value).format('DD/MM/YYYY');
-        input.time = timeElement.value;
-        todos.push(input);
-        inputElement.value = "";
-        dateElement.value = "";
-        timeElement.value = "";
-        allTodos();
+        if (dateElement.value !== "" && timeElement.value !== "") {
+            var input = {};
+            input.name = inputElement.value;
+            input.date = moment(dateElement.value).format('DD/MM/YYYY');
+            input.time = timeElement.value;
+            todos.push(input);
+            inputElement.value = "";
+            dateElement.value = "";
+            timeElement.value = "";
+            allTodos();
 
-        saveStorage();
+            saveStorage();
+        } else {
+            alert("Please, enter date and time correctly");
+        }
     } else {
         alert('Write a to-do!');
     }
