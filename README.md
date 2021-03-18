@@ -14,9 +14,8 @@ Aplicação para criação, consulta e gerenciamento de tarefas.
 - Interações com Javascript;
 - Moment.js para tratamento de datas;
 - Responsividade com Media Queries.
+- Local Storage para armazenamento de tarefas.
 - Baseado na aplicação aprendida no [curso de JS da Rocketseat](https://rocketseat.com.br/starter/curso-gratuito-javascript "Curso de Javascript da Rocketseat"));
-
-Atualmente utiliza Local Storage para armazenamento de tarefas, sendo que, posteriormente, será implementado o armazenamento em Banco de dados. 
 
 ------------
 
@@ -36,6 +35,6 @@ Atualmente utiliza Local Storage para armazenamento de tarefas, sendo que, poste
 - Javascript
 - [Moment.js](https://momentjs.com/ "Moment.js")
 
-<h5 align="center"> Projeto em construção</h5>
+<h5 align="center"> Projeto finalizado</h5>
 
 ###### *Desenvolvido com a exclusiva finalidade de aplicar os conhecimentos obtidos através dos meus estudos em HTML, CSS e JS.*
